@@ -1,16 +1,168 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Il Sito di Darios</title>
-  <link rel="stylesheet" href="css/style.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dario Grillo | IT Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header>
-    <img src="img/logo.svg" alt="Dariosz Site Logo" width="100">
-  
-  </header>
+
+    <!-- Header Menu -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">DG</div>
+                <div class="menu">
+                    <a href="#about">Chi sono</a>
+                    <a href="#skills">Competenze</a>
+                    <a href="#projects">Progetti</a>
+                    <a href="#contact">Contatti</a>
+                </div>
+                <!-- Hamburger Menu -->
+                <button class="menu-toggle" aria-label="Apri menu" aria-expanded="false">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="container">
+
+        <!--  Hero section -->
+        <section class="hero">
+            <div>
+                <h1>Dario Grillo</h1>
+                <h2>System Administrator · Web Developer</h2>
+                <p>Creo soluzioni software, gestisco infrastrutture IT e sviluppo applicazioni web moderne.</p>
+                <a href="#projects" class="button">Visualizza progetti</a>
+                <div class="competenze-box">
+                    <h3>Ambiti principali</h3>
+                    <div class="competenze-mini">
+
+                        <div class="competenza-mini-card">
+                            <h4>Sviluppo Software</h4>
+                            <p>Applicazioni web, gestionali aziendali e soluzioni personalizzate.</p>
+                        </div>
+
+                        <div class="competenza-mini-card">
+                            <h4>Sistemi e Infrastrutture</h4>
+                            <p>Server, reti aziendali e ambienti Windows/Linux.</p>
+                        </div>
+
+                        <div class="competenza-mini-card">
+                            <h4>Automazione e Dati</h4>
+                            <p>Script, database e ottimizzazione dei processi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="img/foto.jpg" alt="Dario Grillo">
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section id="about">
+            <h2 class="title">Chi sono</h2>
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Esperienza</h3>
+                    <p>Sviluppo software, gestione sistemi Windows/Linux, reti aziendali e soluzioni web.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Obiettivo</h3>
+                    <p>Creare soluzioni semplici, sicure e performanti per aziende e professionisti.</p>
+                </div>
+            </div>
+        </section>
+
+      <!-- Skill section -->
+        <section id="skills">
+            <h2 class="title">
+                Competenze
+            </h2>
+            <div class="skills">
+                <span>Laravel</span>
+                <span>Vue.js</span>
+                <span>Python</span>
+                <span>PHP</span>
+                <span>SQL Server</span>
+                <span>Windows Server</span>
+                <span>Linux</span>
+                <span>Docker</span>
+                <span>WordPress</span>
+                <span>Git</span>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects">
+            <h2 class="title">Progetti</h2>
+            <div class="cards">
+
+                <div class="card">
+                    <h3>CRM Gestionale</h3>
+                    <p>Gestionale aziendale sviluppato con Laravel, Vue e SQL Server.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Python Tools</h3>
+                    <p>Automazioni per gestione dati, Excel e processi aziendali.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <p>Siti web e landing page ottimizzate per prestazioni e SEO.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+            <h2 class="title">Contatti</h2>
+            <div class="cards">
+
+                <a href="https://github.com/darioszhub" class="card-link">
+                  <div class="card">
+                    <h3>GitHub</h3>
+                    <p>github.com/darioszhub</p>
+                  </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/dario-sebastiano-grillo-644ba5196" class="card-link">
+                  <div class="card">
+                      <h3>LinkedIn</h3>
+                      <p>linkedin.com/in/dario-grillo</p>
+                  </div>
+                </a>
+
+                <div class="card">
+                    <h3>Email</h3>
+                    <p>tuaemail@email.com</p>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- footer -->
+    <footer>
+
+        © <span id="anno"></span> Dario Grillo
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
 </body>
 </html>

@@ -1,2 +1,7 @@
-@use 'generic.scss';
-@use 'header.scss';
+@use "base";
+@use "header";
+@use "hero";
+@use "cards";
+@use "skills";
+@use "footer";
+@use "media";
