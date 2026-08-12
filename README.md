@@ -160,4 +160,6 @@ The website is hosted using GitHub Pages and does not require a PHP server or ba
 
 This project represents the personal portfolio of Dario Grillo.
 
-The source code is publicly available for reference. Personal content, images and graphic elements are not intended for reuse without permission.
+The source code is licensed under the MIT License and is publicly available for reference, use and modification.
+
+Personal content, images, logo, favicon and other graphic elements are not covered by the MIT License and are not intended for reuse without permission.
