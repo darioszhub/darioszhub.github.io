@@ -30,20 +30,24 @@ function updateThemeButton() {
 
 function updateThemeColor(theme) {
 
-    const themeColor = document.querySelector(
-        'meta[name="theme-color"]'
-    );
+    const oldThemeColor =
+        document.querySelector('meta[name="theme-color"]');
 
-    if (themeColor) {
-
-        themeColor.setAttribute(
-            "content",
-            theme === "light"
-                ? "#f8fafc"
-                : "#0f172a"
-        );
-
+    if (oldThemeColor) {
+        oldThemeColor.remove();
     }
+
+    const newThemeColor =
+        document.createElement("meta");
+
+    newThemeColor.name = "theme-color";
+
+    newThemeColor.content =
+        theme === "light"
+            ? "#f8fafc"
+            : "#0f172a";
+
+    document.head.appendChild(newThemeColor);
 }
 
 

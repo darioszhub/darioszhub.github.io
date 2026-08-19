@@ -12,9 +12,8 @@ document.documentElement.setAttribute(
 
 // Set browser theme color
 
-const themeColor = document.querySelector(
-    'meta[name="theme-color"]'
-);
+const themeColor =
+    document.querySelector('meta[name="theme-color"]');
 
 if (themeColor) {
 
