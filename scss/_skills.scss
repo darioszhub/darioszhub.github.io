@@ -14,13 +14,13 @@
 
 .skills span {
 
-    background: #1e293b;
+    background: var(--skill-bg);
 
     padding: 12px 25px;
 
     border-radius: 30px;
 
-    border: 1px solid rgba(255, 255, 255, .1);
+    border: 1px solid var(--border);
 
     transition: .3s;
 
@@ -28,7 +28,7 @@
 
 .skills span:hover {
 
-    background: #38bdf8;
+    background: var(--accent);
 
     color: #111;
 

@@ -1,3 +1,51 @@
+// Tema chiaro / scuro
+
+const themeToggle = document.getElementById("theme-toggle");
+
+function updateThemeButton() {
+
+    const currentTheme =
+        document.documentElement.getAttribute("data-theme");
+
+    if (currentTheme === "light") {
+
+        themeToggle.textContent = "☾";
+
+        themeToggle.setAttribute(
+            "aria-label",
+            "Attiva tema scuro"
+        );
+
+    } else {
+
+        themeToggle.textContent = "☀";
+
+        themeToggle.setAttribute(
+            "aria-label",
+            "Attiva tema chiaro"
+        );
+    }
+}
+
+updateThemeButton();
+
+themeToggle.addEventListener("click", () => {
+
+    const currentTheme =
+        document.documentElement.getAttribute("data-theme");
+
+    const newTheme =
+        currentTheme === "light" ? "dark" : "light";
+
+    document.documentElement.setAttribute(
+        "data-theme",
+        newTheme
+    );
+
+    localStorage.setItem("theme", newTheme);
+
+    updateThemeButton();
+});
 
 // Menu Mobile
 const menuToggle = document.querySelector(".menu-toggle");

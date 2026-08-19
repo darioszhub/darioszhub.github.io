@@ -22,7 +22,7 @@
 
 .hero h2 {
 
-    color: #38bdf8;
+    color: var(--accent);
     font-weight: 500;
     margin-bottom: 25px;
 
@@ -32,13 +32,11 @@
 
 .hero p {
 
-    color: #cbd5e1;
+    color: var(--text-secondary);
     line-height: 1.8;
     max-width: 600px;
 
 }
-
-
 
 
 .button {
@@ -46,15 +44,14 @@
     display: inline-block;
     margin-top: 35px;
     padding: 15px 35px;
-    background: #38bdf8;
-    color: #0f172a;
+    background: var(--accent);
+    color: var(--button-text);
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     transition: .3s;
 
 }
-
 
 
 .button:hover {
@@ -68,8 +65,8 @@
 .competenze-box {
 
     margin-top: 40px;
-    background: rgba(255, 255, 255, .06);
-    border: 1px solid rgba(255, 255, 255, .1);
+    background: var(--surface-light);
+    border: 1px solid var(--border);
     border-radius: 15px;
     padding: 25px;
     backdrop-filter: blur(15px);
@@ -80,7 +77,7 @@
 
 .competenze-box h3 {
 
-    color: #58a6ff;
+    color: var(--accent-secondary);
     margin-bottom: 20px;
 
 }
@@ -95,8 +92,8 @@
 
 .competenza-mini-card {
 
-    background: rgba(255, 255, 255, .06);
-    border: 1px solid #30363d;
+    background: var(--bg);
+    border: 1px solid var(--mini-card-border);
     padding: 15px;
     border-radius: 10px;
 
@@ -104,7 +101,7 @@
 
 .competenza-mini-card h4 {
 
-    color: white;
+    color: var(--text);
     font-size: 15px;
     margin-bottom: 8px;
 
@@ -116,7 +113,7 @@
 
     font-size: 13px;
     line-height: 1.5;
-    color: #c9d1d9;
+    color: var(--text-secondary);
 
 }
 
@@ -134,7 +131,7 @@
     position: absolute;
     width: 350px;
     height: 350px;
-    background: #38bdf8;
+    background: var(--accent);
     filter: blur(80px);
     opacity: .35;
 
@@ -147,6 +144,6 @@
     height: 330px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #38bdf8;
+    border: 5px solid var(--accent);
 
 }
