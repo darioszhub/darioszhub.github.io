@@ -104,15 +104,6 @@ nav {
     line-height: 1;
     cursor: pointer;
     transition: color .3s ease, background-color .3s ease, border-color .3s ease, transform .3s ease;
-    
-}
-
-.theme-toggle:hover {
-
-    color: var(--accent);
-    background: var(--surface-light);
-    border-color: var(--accent);
-    transform: rotate(15deg);
 
 }
 
@@ -134,5 +125,16 @@ nav {
     background: var(--text);
     margin: 6px 0;
     transition: .3s;
+
+}
+
+@media (hover: hover) {
+
+    .theme-toggle:hover {
+        color: var(--accent);
+        background: var(--surface-light);
+        border-color: var(--accent);
+        transform: rotate(15deg);
+    }
 
 }

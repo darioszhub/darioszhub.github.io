@@ -27,7 +27,28 @@ function updateThemeButton() {
     }
 }
 
+
+function updateThemeColor(theme) {
+
+    const themeColor = document.querySelector(
+        'meta[name="theme-color"]'
+    );
+
+    if (themeColor) {
+
+        themeColor.setAttribute(
+            "content",
+            theme === "light"
+                ? "#f8fafc"
+                : "#0f172a"
+        );
+
+    }
+}
+
+
 updateThemeButton();
+
 
 themeToggle.addEventListener("click", () => {
 
@@ -35,16 +56,24 @@ themeToggle.addEventListener("click", () => {
         document.documentElement.getAttribute("data-theme");
 
     const newTheme =
-        currentTheme === "light" ? "dark" : "light";
+        currentTheme === "light"
+            ? "dark"
+            : "light";
 
     document.documentElement.setAttribute(
         "data-theme",
         newTheme
     );
 
-    localStorage.setItem("theme", newTheme);
+    localStorage.setItem(
+        "theme",
+        newTheme
+    );
+
+    updateThemeColor(newTheme);
 
     updateThemeButton();
+
 });
 
 // Menu Mobile
