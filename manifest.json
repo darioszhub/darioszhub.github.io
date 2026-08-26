@@ -1,0 +1,38 @@
+{
+    "id": "/",
+    "name": "Dario Grillo | IT Portfolio",
+    "short_name": "Dario Grillo",
+    "description": "Portfolio di Dario Grillo, System Administrator e Web Developer. Sviluppo software, amministrazione di sistemi, infrastrutture IT, automazione e sviluppo web.",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#0f172a",
+    "theme_color": "#0f172a",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "screenshots": [
+       {
+           "src": "screenshots/desktop.png",
+           "sizes": "1280x680",
+           "type": "image/png",
+           "form_factor": "wide"
+       },
+       {
+           "src": "screenshots/mobile.png",
+           "sizes": "389x827",
+           "type": "image/png"
+       }
+   ]
+}
