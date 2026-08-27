@@ -1,6 +1,6 @@
 // Service Worker
 
-const CACHE_NAME = 'dario-portfolio-v1';
+const CACHE_NAME = 'dario-portfolio-v4';
 
 const FILES_TO_CACHE = [
     '/',
@@ -52,9 +52,9 @@ self.addEventListener('fetch', event => {
                 return response || fetch(event.request);
             })
             .catch(() => {
-                return caches.match('/index.html');
+                if (event.request.mode === 'navigate') {
+                    return caches.match('/index.html');
+                }
             })
     );
 });
-
-
