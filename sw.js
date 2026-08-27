@@ -1,10 +1,11 @@
 // Service Worker
 
-const CACHE_NAME = 'dario-portfolio-v4';
+const CACHE_NAME = 'dario-portfolio-v5';
 
 const FILES_TO_CACHE = [
     '/',
     '/index.html',
+    '/privacy-policy.html',
     '/manifest.json',
     '/img/foto.jpg',
     '/css/style.min.css',
