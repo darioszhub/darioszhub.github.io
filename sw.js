@@ -1,6 +1,6 @@
 // Service Worker
 
-const CACHE_NAME = 'dario-portfolio-v5';
+const CACHE_NAME = 'dario-portfolio-v6';
 
 const FILES_TO_CACHE = [
     '/',
@@ -20,7 +20,19 @@ const FILES_TO_CACHE = [
     '/icons/icon-512.png',
     '/favicon.svg',
     '/screenshots/desktop.png',
-    '/screenshots/mobile.png'
+    '/screenshots/mobile.png',
+    // ContractEnd
+    '/ContractEnd/index.html',
+    '/ContractEnd/css/style.min.css',
+    '/ContractEnd/js/main.js',
+    '/ContractEnd/js/theme.js',
+    '/ContractEnd/img/app_icon.png',
+    '/ContractEnd/img/clienti.png',
+    '/ContractEnd/img/contratti.png',
+    '/ContractEnd/img/contractend-dashboard.png',
+    '/ContractEnd/img/notifiche.png',
+    '/ContractEnd/img/ricerca.png',
+    '/ContractEnd/img/gemini-ai.png'
 ];
 
 self.addEventListener('install', event => {
